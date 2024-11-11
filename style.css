@@ -1,0 +1,16 @@
+ /* Add some basic styling */
+ .product-list, .cart {
+    background-color: aqua;
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid #ddd;
+  }
+  .cart-item {
+    margin: 5px 0;
+  }
+  .cart-summary {
+    background-color: bisque;
+    font-weight: bold;
+    padding: 5px;
+    margin: 20px;
+  }

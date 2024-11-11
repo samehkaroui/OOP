@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Product List Section -->
+  <div class="product-list">
+    <h2>Products</h2>
+    <div>
+      <label>Product:
+        <select id="productSelect">
+          <option value="1">Apple - $0.5</option>
+          <option value="2">Banana - $0.3</option>
+          <option value="3">Orange - $0.7</option>
+        </select>
+      </label>
+      <label>Quantity:
+        <input type="number" id="quantityInput" min="1" value="1">
+      </label>
+      <button onclick="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Section -->
+  <div class="cart">
+    <h2>Shopping Cart</h2>
+    <div id="cartItems"></div>
+    <div class="cart-summary">
+      <p>Total Items: <span id="totalItems">0</span></p>
+      <p>Total Price: $<span id="totalPrice">0.00</span></p>
+    </div>
+  </div>
+
+  <script src="main.js"> </script>
+</body>
+</html>
+
